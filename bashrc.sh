@@ -1,4 +1,6 @@
 for FN in "before" "alias" "conda" "env" "bashrc" "after"; do
-    source ~/.profiles/$FN.sh
+    if [ -f ~/.profiles/$FN.sh ]; then
+      source ~/.profiles/$FN.sh
+    fi
 done
 
